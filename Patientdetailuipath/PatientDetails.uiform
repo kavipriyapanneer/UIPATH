@@ -1,0 +1,73 @@
+﻿{
+  "Metadata": {
+    "Id": "f4f1cbf5-63c2-4a3e-bce5-45e283a0936d",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "PatientDetails",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Patient Name",
+        "tableView": true,
+        "key": "patientName",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Patient Phone Number",
+        "tableView": true,
+        "key": "patientPhoneNumber",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Patient Gender",
+        "widget": "choicesjs",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "Male",
+              "value": "male"
+            },
+            {
+              "label": "Female",
+              "value": "female"
+            }
+          ]
+        },
+        "key": "patientGender",
+        "type": "select",
+        "input": true
+      },
+      {
+        "label": "Patient Age",
+        "tableView": true,
+        "key": "patientAge",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Disease Description",
+        "tableView": true,
+        "key": "diseaseDescription",
+        "type": "textarea",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
